@@ -1,10 +1,7 @@
-Exit code: 0
-Wall time: 2.9 seconds
-Output:
 const clues = [
-  { eyebrow: "I Â· El comienzo", question: "Â¿En dÃ³nde me dijiste â€˜te amoâ€™ por primera vez?", parts: ["torre", "ingenieria"], hint: "Escribe el lugarâ€¦" },
-  { eyebrow: "II Â· El instante", question: "Â¿CÃ³mo se llama la primera canciÃ³n que te hice?", parts: ["estrellas", "nosotros"], hint: "El tÃ­tulo que solamente nosotros conocemosâ€¦" },
-  { eyebrow: "III Â· La certeza", question: "Â¿DÃ³nde fue nuestra primera cita como novios?", parts: ["cineteca"], hint: "Escribe el lugarâ€¦" }
+  { eyebrow: "I · El comienzo", question: "¿En dónde me dijiste ‘te amo’ por primera vez?", parts: ["torre", "ingenieria"], hint: "Escribe el lugar…" },
+  { eyebrow: "II · El instante", question: "¿Cómo se llama la primera canción que te hice?", parts: ["estrellas", "nosotros"], hint: "El título que solamente nosotros conocemos…" },
+  { eyebrow: "III · La certeza", question: "¿Dónde fue nuestra primera cita como novios?", parts: ["cineteca"], hint: "Escribe el lugar…" }
 ];
 const normalize = value => value.trim().toLocaleLowerCase("es").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 const show = id => document.getElementById(id).classList.remove("hidden");
