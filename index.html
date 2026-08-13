@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>El lugar que guardé para ti</title>
   <meta name="description" content="Una pequeña historia creada para Haru.">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="corner-clues.css?v=1">
 </head>
 <body>
   <main class="shell">
@@ -25,6 +26,12 @@
     </section>
 
     <section id="game" class="game panel hidden">
+      <div class="corner-clues" aria-label="Pistas escondidas sobre un lugar">
+        <span class="corner-clue corner-clue-tl"><b>01</b> donde el concreto mira al cielo</span>
+        <span class="corner-clue corner-clue-tr"><b>02</b> entre planos, números y pasillos</span>
+        <span class="corner-clue corner-clue-bl"><b>03</b> una altura guardó la pregunta</span>
+        <span class="corner-clue corner-clue-br"><b>04</b> y desde ahí todo tuvo respuesta</span>
+      </div>
       <div class="progress-meta"><span>RECONSTRUYENDO EL RECUERDO</span><span id="counter">1 / 3</span></div>
       <div class="progress"><span id="progress-bar"></span></div>
       <p id="eyebrow" class="kicker"></p>
@@ -44,7 +51,7 @@
       <div class="record" aria-hidden="true"><div class="record-center">RDI</div></div>
       <h2>Red de Indra</h2>
       <p class="dedication">Me enseñaras a amar y aprender?</p>
-      <audio controls preload="none"><source src="Red%20de%20Indra.mp3" type="audio/mpeg"></audio>
+      <audio controls preload="metadata"><source src="Red%20de%20Indra.mp3" type="audio/mpeg"></audio>
       <aside class="track-list" aria-label="Lista de ocho canciones">
         <p>TODO FINAL ES TAMBIÉN UN COMIENZO</p>
         <ol>
@@ -59,7 +66,7 @@
 
     <footer><span class="hidden-date" title="Hay fechas que lo cambian todo">18·09</span></footer>
   </main>
-  <script src="app.js?v=2"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
 
