@@ -1,0 +1,34 @@
+.corner-clues {
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.corner-clue {
+  position: absolute;
+  max-width: 190px;
+  color: var(--ink);
+  font-size: 8px;
+  line-height: 1.45;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+  opacity: .16;
+  transition: opacity .4s ease;
+}
+
+.corner-clue:hover { opacity: .62; }
+.corner-clue b { color: var(--red); font-weight: 400; margin-right: 6px; }
+.corner-clue-tl { top: 17px; left: 20px; }
+.corner-clue-tr { top: 17px; right: 20px; text-align: right; }
+.corner-clue-bl { bottom: 58px; left: 20px; }
+.corner-clue-br { right: 20px; bottom: 58px; text-align: right; }
+
+@media (max-width: 700px) {
+  .corner-clue { max-width: 125px; font-size: 6px; opacity: .13; }
+  .corner-clue-tl, .corner-clue-tr { top: 7px; }
+  .corner-clue-tl, .corner-clue-bl { left: 8px; }
+  .corner-clue-tr, .corner-clue-br { right: 8px; }
+  .corner-clue-bl, .corner-clue-br { bottom: 48px; }
+}
+
